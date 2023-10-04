@@ -29,3 +29,21 @@ a {
   background-color: #707070;
 }
 
+.validation-message {
+  color: purple;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.validation-message.success {
+  color: #21e56f;
+}
+
+.validation-message.error {
+  color: #eb3742;
+}
+
+.validation-message.invalid {
+  color: orange;
+} 
+

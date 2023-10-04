@@ -1,0 +1,53 @@
+/* body {
+  background-color: #999999;
+}
+
+.App {
+  font-family: Arial, sans-serif;
+  width: 60%;
+  margin: 40px auto;
+  border: 1px solid #474747;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #3c315b;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+}
+
+.header-icon {
+  margin-right: 20px;
+}
+
+h1 {
+  color: #ab9ff2;
+  font-size: 24px;
+}
+
+textarea {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 15px;
+  margin: 10px 0;
+  border: 1px solid #474747;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+button {
+  background-color: #ab9ff2;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+button:hover {
+  background-color: #e2dffe;
+}
+*/

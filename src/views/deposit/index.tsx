@@ -1,6 +1,7 @@
 import { FC, useCallback } from "react";
 import { useWallet } from "@solana/wallet-adapter-react";
 import { notify } from "utils/notifications";
+import WalletConnect from "./walletConnect";
 
 export const DepositView: FC = ({}) => {
   const { publicKey } = useWallet();
@@ -63,6 +64,8 @@ export const DepositView: FC = ({}) => {
               </span>
             </button>
           </form>
+
+          <WalletConnect />
         </div>
       </div>
     </div>
