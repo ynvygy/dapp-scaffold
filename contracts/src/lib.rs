@@ -1,7 +1,7 @@
 use anchor_lang::{prelude::*, system_program};
 use pyth_sdk_solana::load_price_feed_from_account_info;
 
-declare_id!("3vY5F41z5htZdEv3AF5vppzamEYwXFWGVatWRhZuRbBC");
+declare_id!("BG7YMH3aophUaFjpYqBTFzbcjDjcAjt68tzgYpWF8i1a");
 
 pub const BET_SEED: &[u8] = b"bet";
 
@@ -62,8 +62,15 @@ pub const BET_SEED: &[u8] = b"bet";
       Ok(())
       
     }
-  }
 
+    pub fn claim_bet(ctx: Context<ClaimBet>) -> Result<()> {
+      let bet = &mut ctx.accounts.bet;
+      let prize = bet.amount.checked_mul(2).unwrap();
+      **bet.to_account_info().try_borrow_mut_lamports()? -= prize;
+
+      let pyth_account_info = &ctx.accounts.pyth;
+      }
+  }
 #[derive(Accounts)]
 pub struct CreateBet<'info> {
     #[account(
